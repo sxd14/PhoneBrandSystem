@@ -28,7 +28,10 @@
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".wuyong.TsetActivity"
-            android:label="@string/title_activity_tset"></activity>
+            android:label="@string/title_activity_tset" />
+        <activity
+            android:name=".wuyong.NavActivity"
+            android:label="@string/title_activity_nav"></activity>
     </application>
 
 </manifest>
