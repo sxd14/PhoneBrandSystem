@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/ti222mg"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+<ListView
+    android:layout_marginBottom="50dp"
+    android:id="@+id/lv"
+    android:divider="@null"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"/>
+
+    <LinearLayout
+        android:id="@+id/add"
+        android:layout_gravity="bottom"
+        android:gravity="center"
+        android:background="@color/colorAccent"
+        android:layout_width="match_parent"
+        android:layout_height="55dp">
+        <TextView
+            android:gravity="center"
+            android:textSize="16sp"
+            android:textColor="#FFFFFF"
+            android:text="添加"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+</FrameLayout>
