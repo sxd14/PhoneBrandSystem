@@ -2,37 +2,41 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical"
-
-    android:background="@drawable/tissmg"
     android:layout_width="match_parent"
 
     android:layout_height="match_parent"
-    tools:context=".LoginActivity">
-<LinearLayout
-    android:padding="10dp"
+    android:background="@drawable/d"
+
     android:orientation="vertical"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content">
-    <EditText
-        android:id="@+id/edName"
-        android:hint="账号"
+    tools:context=".LoginActivity">
+
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-    <EditText
-        android:id="@+id/edPass"
-        android:hint="密码"
-        android:layout_marginTop="10dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-    <Button
-        android:id="@+id/btLogin"
-        android:layout_marginTop="10dp"
-        android:text="登录"
-        android:textSize="17sp"
-        android:textColor="#FFFFFF"
-        android:background="@color/colorAccent"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-</LinearLayout>
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <EditText
+            android:id="@+id/edName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="账号" />
+
+        <EditText
+            android:id="@+id/edPass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="密码" />
+
+        <Button
+            android:id="@+id/btLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorAccent"
+            android:text="登录"
+            android:textColor="#FFFFFF"
+            android:textSize="17sp" />
+    </LinearLayout>
 </LinearLayout>

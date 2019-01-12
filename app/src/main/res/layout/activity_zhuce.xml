@@ -2,44 +2,48 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical"
-
-    android:background="@drawable/tissmg"
     android:layout_width="match_parent"
 
     android:layout_height="match_parent"
+    android:background="@drawable/d"
+
+    android:orientation="vertical"
     tools:context=".LoginActivity">
 
     <ImageView
-        android:layout_margin="20dp"
-        android:layout_gravity="center"
-        android:background="@mipmap/ic_launcher"
         android:layout_width="100dp"
-        android:layout_height="100dp" />
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_margin="20dp"
+        android:background="@mipmap/ic_launcher" />
+
     <LinearLayout
-        android:padding="10dp"
-        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+
         <EditText
             android:id="@+id/edName"
-            android:hint="账号"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:hint="账号" />
+
         <EditText
             android:id="@+id/edPass"
-            android:hint="密码"
-            android:layout_marginTop="10dp"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="密码" />
+
         <Button
             android:id="@+id/btZhuce"
-            android:layout_marginTop="10dp"
-            android:text="注册"
-            android:textSize="17sp"
-            android:textColor="#FFFFFF"
-            android:background="@color/colorAccent"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorAccent"
+            android:text="注册"
+            android:textColor="#FFFFFF"
+            android:textSize="17sp" />
     </LinearLayout>
 </LinearLayout>

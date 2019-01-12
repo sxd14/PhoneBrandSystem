@@ -3,29 +3,32 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:orientation="vertical"
-    android:background="@color/colorAccent"
-    android:gravity="center|top"
     android:layout_height="match_parent"
+    android:background="@drawable/ti222mg"
+    android:gravity="center|top"
+    android:orientation="vertical"
     tools:context=".AddActivity">
+
     <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
         android:layout_marginStart="10dp"
         android:layout_marginEnd="10dp"
-        android:src="@drawable/sds2"
-        android:layout_width="match_parent"
-        android:layout_height="200dp" />
+        android:src="@drawable/sds2" />
+
     <android.support.v7.widget.CardView
-        android:layout_margin="10dp"
-        app:cardCornerRadius="2dp"
-        android:elevation="10dp"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:elevation="10dp"
+        app:cardCornerRadius="2dp">
+
         <LinearLayout
-            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:gravity="center"
             android:orientation="vertical"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:padding="10dp">
 
             <EditText
                 android:id="@+id/edName"
@@ -41,22 +44,22 @@
                 android:hint="处理器(CPU)" />
 
             <EditText
-                android:inputType="number"
                 android:id="@+id/edBattery"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                android:hint="电池容量" />
+                android:hint="电池容量"
+                android:inputType="number" />
 
 
             <android.support.v7.widget.AppCompatButton
-                android:layout_marginTop="10dp"
-                android:textColor="#FFFFFF"
                 android:id="@+id/btAdd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
                 android:background="@color/colorAccent"
                 android:text="添加"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:textColor="#FFFFFF" />
         </LinearLayout>
     </android.support.v7.widget.CardView>
 

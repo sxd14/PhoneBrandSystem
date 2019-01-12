@@ -3,52 +3,59 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:orientation="vertical"
-    android:gravity="center|top"
     android:layout_height="match_parent"
+    android:background="@drawable/ti222mg"
+    android:gravity="center|top"
+    android:orientation="vertical"
     tools:context=".AddActivity">
 
     <android.support.v7.widget.CardView
-        android:layout_margin="10dp"
-        app:cardCornerRadius="2dp"
-        android:elevation="10dp"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:elevation="10dp"
+        app:cardCornerRadius="2dp">
+
         <LinearLayout
-            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:gravity="center"
             android:orientation="vertical"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:padding="10dp">
 
-           <LinearLayout
-               android:layout_width="match_parent"
-               android:layout_height="wrap_content">
-               <TextView
-                   android:text="手机型号:"
-                   android:textColor="#000000"
-                   android:textSize="18sp"
-                   android:layout_width="wrap_content"
-                   android:layout_height="wrap_content" />
-               <EditText
-                   android:id="@+id/edName"
-                   android:layout_width="match_parent"
-                   android:layout_height="wrap_content"
-                   android:hint="手机型号:" />
-
-           </LinearLayout>
             <LinearLayout
-                android:layout_marginTop="10dp"
-                android:gravity="center"
-                android:orientation="horizontal"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
+
                 <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="手机型号:"
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/edName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="手机型号:" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:text="处理器:"
                     android:textColor="#000000"
-                    android:textSize="18sp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" />
+                    android:textSize="18sp" />
+
                 <EditText
                     android:id="@+id/edCpu"
                     android:layout_width="match_parent"
@@ -58,18 +65,21 @@
 
 
             </LinearLayout>
+
             <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:gravity="center"
-                android:orientation="horizontal"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:orientation="horizontal">
+
                 <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:text="电池容量:"
                     android:textColor="#000000"
-                    android:textSize="18sp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" />
+                    android:textSize="18sp" />
+
                 <EditText
                     android:id="@+id/edBattery"
                     android:layout_width="match_parent"
@@ -80,15 +90,14 @@
             </LinearLayout>
 
 
-
             <android.support.v7.widget.AppCompatButton
-                android:layout_marginTop="10dp"
-                android:textColor="#FFFFFF"
                 android:id="@+id/btOk"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
                 android:background="@color/colorAccent"
                 android:text="确定修改"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:textColor="#FFFFFF" />
         </LinearLayout>
     </android.support.v7.widget.CardView>
 </LinearLayout>
