@@ -11,7 +11,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".LoginActivity">
+        <activity android:name=".activity_zc">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -21,14 +21,13 @@
         <activity android:name=".AddActivity" />
         <activity android:name=".UpdateActivity" />
         <activity android:name=".MainActivity" />
-        <activity android:name=".ZhuceActivity" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".ZhuceActivity"/>
+        <activity android:name=".activity_cg"/>
         <activity
             android:name=".wuyong.ScrollingActivity"
             android:label="@string/title_activity_scrolling"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name=".wuyong.TsetActivity"
-            android:label="@string/title_activity_tset" />
     </application>
 
 </manifest>
